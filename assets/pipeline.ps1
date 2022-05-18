@@ -15,7 +15,7 @@ if($?){
     write-host "(2) Pushing changes to git..."
     cd ..
     git add .
-    git commit -m "COMPX341-22A-A3 Commiting from CI/CD Pipeline"
+    git commit -m $args[0]
     git push origin main
     write-host -ForegroundColor Green "Changes pushed to git successfully!"
 
