@@ -1,3 +1,9 @@
+#Checks if a commit message is attached initially 
+if ($args[0] -eq $null){
+    write-host "Please specify a commit message. Usage:"
+    write-host "pipeline.ps1 ""Commit message"" "
+    exit 1
+}
 write-host "(0) Setting up npm..."
 npm install 
 write-host "(1) Building project..."
@@ -17,6 +23,7 @@ if($?){
     write-host "(3) Starting project locally..."
     npm run start
 }
+#Otherwise the build has failed and no commit should occur 
 else{
     write-host -ForegroundColor Red "Build Failed"
     write-host "Unable to commit changes due to compile-time errors, please review"
