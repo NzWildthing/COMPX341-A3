@@ -13,6 +13,7 @@ if($?){
     git push origin main
     write-host -ForegroundColor Green "Changes pushed to git successfully!"
 
+    cd .\assets
     write-host "(3) Starting project locally..."
     npm run start
 }
