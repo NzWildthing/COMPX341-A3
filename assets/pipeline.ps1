@@ -1,4 +1,4 @@
-#Checks if a commit message is attached initially 
+#Checks if a commit message is attached initially. 
 if ($args[0] -eq $null){
     write-host "Please specify a commit message. Usage:"
     write-host "pipeline.ps1 ""Commit message"" "
