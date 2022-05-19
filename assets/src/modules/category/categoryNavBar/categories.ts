@@ -1,4 +1,4 @@
-//
+//Brogan Jowers-Wilding: 1538252
 export const categories = {
   cooks: "Cookbooks",
   database: "Database",

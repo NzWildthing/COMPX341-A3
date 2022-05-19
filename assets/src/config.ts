@@ -1,4 +1,4 @@
-//
+//Brogan Jowers-Wilding: 1538252
 export default {
   apiGateway: {
     REGION: "us-east-1",
